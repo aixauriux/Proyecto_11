@@ -1,0 +1,184 @@
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f7f4;
+    color: #29483e;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.encabezado {
+    padding: 45px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #245b4b, #80b7a0);
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 15px;
+}
+
+.encabezado h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+.encabezado p {
+    margin-bottom: 0;
+}
+
+/* Contenido */
+.contenido {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* Tarjetas */
+.tarjeta {
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #d5e8df;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(35, 82, 65, 0.08);
+}
+
+.tarjeta h2 {
+    color: #34745c;
+    margin-top: 0;
+}
+
+/* Banner de cookies */
+.banner-cookies {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 1000;
+    width: 350px;
+    max-width: calc(100% - 30px);
+    padding: 25px;
+    background-color: #173d32;
+    color: white;
+    border: 2px solid #6fa88e;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(20, 55, 43, 0.3);
+}
+
+/* Botón para cerrar */
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+/* Icono */
+.icono-cookie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 15px;
+    background-color: #2b5949;
+    border-radius: 18px;
+    font-size: 38px;
+}
+
+/* Texto del banner */
+.banner-cookies h2 {
+    margin: 0 0 10px;
+    font-size: 23px;
+}
+
+.banner-cookies p {
+    font-size: 14px;
+    color: #e0eee7;
+}
+
+/* Botón aceptar */
+.boton-aceptar {
+    width: 100%;
+    margin-top: 10px;
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    background-color: #b6dfc6;
+    color: #173d32;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton-aceptar:hover {
+    background-color: #d4f0de;
+    transform: translateY(-2px);
+}
+
+.boton-aceptar:focus-visible,
+.cerrar:focus-visible {
+    outline: 3px solid #f1fff5;
+    outline-offset: 3px;
+}
+
+/* Nota del banner */
+.banner-cookies .nota-cookies {
+    margin-bottom: 0;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #b8d5c6;
+}
+
+/* Ocultar banner */
+.banner-cookies.oculto {
+    display: none;
+}
+
+/* Pie de página */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #557568;
+    font-size: 13px;
+}
+
+/* Diseño para celulares */
+@media (max-width: 480px) {
+    .encabezado {
+        padding: 35px 15px;
+    }
+
+    .encabezado h1 {
+        font-size: 25px;
+    }
+
+    .contenido {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .tarjeta {
+        padding: 20px;
+    }
+
+    .banner-cookies {
+        right: 15px;
+        bottom: 15px;
+        width: auto;
+        padding: 22px;
+    }
+}
